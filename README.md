@@ -1,16 +1,23 @@
-# Fibonacci Numbers in Java
+1) Ітераційний метод:
 
-This project contains three implementations of the Fibonacci sequence in Java:
+Часова складність: O(n)
 
-## Implementations
+Просторова складність: O(1)
 
-- **Iterative:** Efficient linear approach with O(n) time and O(1) space.
-- **Recursive:** Naive recursive implementation with exponential time complexity O(2^n).
-- **Dynamic Programming:** Recursive with memoization for O(n) time and space.
+UML-діаграма: Activity Diagram — ілюструє послідовні кроки циклу.
 
-## UML Diagrams
+2) Рекурсивний метод:
 
-See the `uml/` folder for the corresponding diagrams (to be added):
-- Activity diagram for iterative version
-- Sequence diagram for recursive version
-- Class diagram for dynamic programming version
+Часова складність: O(2^n) — багаторазові виклики однакових аргументів.
+
+Просторова складність: O(n) — глибина рекурсивного стеку.
+
+UML-діаграма: Sequence Diagram — показує виклики функцій один до одного.
+
+3) Динамічне програмування (мемоізація)
+
+Часова складність: O(n)
+
+Просторова складність: O(n) — для збереження результатів у memo
+
+UML-діаграма: Class Diagram — можна показати клас із полем memo як атрибутом.
